@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>NotionAPIコンポーネント実験場</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-title">
+            Update a data source
+        </h1>
+    </header>
+
+    <main class="layout">
+
+        <!-- 入力エリア -->
+        <section id="input" class="panel">
+        </section>
+
+        <!-- 出力エリア -->
+        <section id="output" class="panel">
+        </section>
+
+    </main>
+
+    <!-- 依存関係があるので順番が重要 -->
+    <script src="../components/CreateElement.js"></script>
+    <script src="../components/InputText.js"></script>
+    <script src="../components/ExecButton.js"></script>
+    <script src="../components/OutputTable.js"></script>
+    <script src="../utils/loadEnv.js"></script>
+    <script src="../utils/apiFetch.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
